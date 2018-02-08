@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Email from './Email';
+import LoginForm from './LoginForm';
 
 class App extends Component {
   constructor(){
@@ -32,6 +33,7 @@ class App extends Component {
         <h1>{this.state.count}</h1>
         <button className="btn btn-large btn-primary" onClick={() => this.setState({count: 0})}>RESET MUTHALUVA</button>
         <Email />
+        <LoginForm />
      </div>
     );
   }
