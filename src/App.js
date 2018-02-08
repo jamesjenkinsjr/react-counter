@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Email from './Email';
 
 class App extends Component {
   constructor(){
@@ -23,13 +24,14 @@ class App extends Component {
   render() {
     return (
      <div>
-       <div className="form-group">
-        <input className="form-control" type="number" onChange={this.valueChange} value={this.state.value}/>
-      </div>
-       <button className="btn btn-large btn-primary" onClick={this.increment}>+</button>
-       <button className="btn btn-large btn-primary" onClick={this.decrement}>-</button>
-       <h1>{this.state.count}</h1>
-       <button className="btn btn-large btn-primary" onClick={() => this.setState({count: 0})}>RESET MUTHALUVA</button>
+        <div className="form-group">
+          <input className="form-control" type="number" onChange={this.valueChange} value={this.state.value}/>
+        </div>
+        <button className="btn btn-large btn-primary" onClick={this.increment}>+</button>
+        <button className="btn btn-large btn-primary" onClick={this.decrement}>-</button>
+        <h1>{this.state.count}</h1>
+        <button className="btn btn-large btn-primary" onClick={() => this.setState({count: 0})}>RESET MUTHALUVA</button>
+        <Email />
      </div>
     );
   }
