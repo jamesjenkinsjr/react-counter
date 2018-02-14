@@ -2,7 +2,6 @@
   "name": "react-counter",
   "version": "0.1.0",
   "private": true,
-  //"homepage": "http://react-counter.jamesgjenkins.com",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "gh-pages": "^1.1.0",
